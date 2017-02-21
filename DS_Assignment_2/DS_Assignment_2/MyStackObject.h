@@ -1,6 +1,5 @@
-#pragma once
-#ifndef MY_STACK_OBJECT
-#define MY_STACK_OBJECT
+#ifndef MY_STACK_OBJECT_H
+#define MY_STACK_OBJECT_H
 
 class MyStackObject
 {

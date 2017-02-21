@@ -110,10 +110,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MazeStackNode.h" />
     <ClInclude Include="MyStackObject.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MazeApp.cpp" />
+    <ClCompile Include="MazeStackNode.cpp" />
     <ClCompile Include="MyStackObject.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
