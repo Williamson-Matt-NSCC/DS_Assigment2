@@ -14,16 +14,16 @@ public:
 	MazeStackNode(MazeStackNode* North, MazeStackNode* East, MazeStackNode* South, MazeStackNode* West);
 	virtual ~MazeStackNode();
 
-	MazeStackNode getNorth();
+	MazeStackNode *getNorth();
 	void setNorth(MazeStackNode *node);
 
-	MazeStackNode getEast();
+	MazeStackNode *getEast();
 	void setEast(MazeStackNode *node);
 	
-	MazeStackNode getSouth();
+	MazeStackNode *getSouth();
 	void setSouth(MazeStackNode *node);
 
-	MazeStackNode getWest();
+	MazeStackNode *getWest();
 	void setWest(MazeStackNode *node);
 };
 

@@ -3,11 +3,11 @@
 
 using namespace std;
 
-MazeStackNode::MazeStackNode() : _data(0), _next(NULL)
+MazeStackNode::MazeStackNode() : North(NULL), East(NULL), South(NULL), West(NULL)
 {
 }
 
-MazeStackNode::MazeStackNode(int data, MazeStackNode* next) : _data(data), _next(next)
+MazeStackNode::MazeStackNode(MazeStackNode* north, MazeStackNode* east, MazeStackNode* south, MazeStackNode* west) : North(north), East(east), South(south), West(west)
 {
 }
 
@@ -15,22 +15,43 @@ MazeStackNode::~MazeStackNode()
 {
 }
 
-int MazeStackNode::getData()
+MazeStackNode* MazeStackNode::getNorth()
 {
-	return _data;
+	return North;
 }
 
-void MazeStackNode::setData(int data)
+void MazeStackNode::setNorth(MazeStackNode *north)
 {
-	_data = data;
+	North = north;
 }
 
-MazeStackNode* MazeStackNode::getNext()
+MazeStackNode* MazeStackNode::getEast()
 {
-	return _next;
+	return East;
 }
 
-void MazeStackNode::setNext(MazeStackNode *next)
+void MazeStackNode::setEast(MazeStackNode *east)
 {
-	_next = next;
+	East = east;
 }
+
+MazeStackNode* MazeStackNode::getSouth()
+{
+	return South;
+}
+
+void MazeStackNode::setSouth(MazeStackNode *south)
+{
+	South = south;
+}
+
+MazeStackNode* MazeStackNode::getWest()
+{
+	return West;
+}
+
+void MazeStackNode::setWest(MazeStackNode *west)
+{
+	West = west;
+}
+
