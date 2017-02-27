@@ -3,7 +3,12 @@
 
 using namespace std;
 
-int Main()
+int main()
 {
+	MyStackObject myStack;
 
+	
+
+
+	return 0;
 }

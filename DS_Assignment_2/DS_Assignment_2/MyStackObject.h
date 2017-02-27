@@ -5,7 +5,15 @@ class MyStackObject
 {
 public:
 	MyStackObject();
-	~MyStackObject();
+	~MyStackObject(void);
+
+	void add();
+	void getTop();
+	void pop();
+	void seek();
+	void goBackToLastIntersection();
+
+
 };
 
 #endif // !MY_STACK_OBJECT
