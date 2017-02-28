@@ -59,7 +59,7 @@ namespace TestProject1
 		[TestMethod]
 		void WhenAddingANodeToTheTopOfTheStack()
 		{
-			
+
 		};
 	};
 }

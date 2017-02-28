@@ -58,15 +58,19 @@ void Node::setWest(Node *west)
 
 bool Node::getIsAnIntersection()
 {
-	bool b;
+	bool b = false;
 
 	switch (getAvailableDirections())
 	{
-		case 1|2:
-			return false;
-		case 3|4:
-			return true;
+	case 0:
+		return false;
+	case 1|2:
+		return false;
+	case 3|4:
+		return true;
 	}
+
+	return false;
 }
 
 int Node::getAvailableDirections()
